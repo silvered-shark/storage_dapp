@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Storage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .forms {
+            display: flex;
+            gap:2rem;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+        }
+        form input {
+            outline: 0;
+            padding:10px 20px;
+        }
+        form button {
+            background: rgba(0, 0, 255, 0.603);
+            border:0;
+            padding:10px 20px;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Update the storage!</h1>
+        <div class="forms">
+            <div class="form1">
+                <h3>The First storage has only 1 string data to manipulate!</h3>
+                <form action="#" id="form1">
+                    <input type="text" placeholder="The value must be string!">
+                    <button type="submit">Send</button>
+                </form>
+                <h3>The value of the storage1 is: <span id="value1"></span></h3>
+            </div>
+            <div class="form2">
+                <h3>The second storage has an array of integers to manipulate!</h3>
+                <form action="#" id="form2">
+                    <input type="number" placeholder="The value must be integer!">
+                    <button type="submit">Send</button>
+                </form>
+                <h3>The value of the storage2 is: <span id="value2"></span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="web3.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
